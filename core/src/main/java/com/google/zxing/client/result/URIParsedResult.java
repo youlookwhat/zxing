@@ -68,7 +68,7 @@ public final class URIParsedResult extends ParsedResult {
     if (protocolEnd < 0 || isColonFollowedByPortNumber(uri, protocolEnd)) {
       // No protocol, or found a colon, but it looks like it is after the host, so the protocol is still missing,
       // so assume http
-      uri = "http://" + uri;
+      uri = "https://" + uri;
     }
     return uri;
   }
